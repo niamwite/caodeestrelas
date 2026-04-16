@@ -8,7 +8,8 @@
 
 **Rua Gaivota, 903 — Moema, São Paulo**
 **(11) 94289-1718**
-**www.caodeestrelas.com.br**
+
+🔗 **Site ao vivo:** https://niamwite.github.io/caodeestrelas/
 
 ---
 
@@ -18,7 +19,7 @@
 2. [Estrutura do Site — 32 Páginas SEO](#2-estrutura-do-site--32-páginas-seo)
 3. [Simulador de Serviços — Conversão Instantânea](#3-simulador-de-serviços--conversão-instantânea)
 4. [Arquitetura de SEO — Dominação Local](#4-arquitetura-de-seo--dominação-local)
-5. [Tabela de Páginas por Categoria](#5-tabela-de-páginas-por-categoria)
+5. [Links de Todas as Páginas](#5-links-de-todas-as-páginas)
 6. [Diferenciais Técnicos](#6-diferenciais-técnicos)
 7. [Resumo de Investimento](#7-resumo-de-investimento)
 
@@ -32,6 +33,8 @@ Este projeto consiste em um site institucional de alta conversão com **duas fre
 
 - **Presença digital completa** com 32 páginas segmentadas por bairro, serviço e raça
 - **Simulador de orçamento** integrado ao WhatsApp para conversão imediata
+
+🔗 **Visualizar:** https://niamwite.github.io/caodeestrelas/
 
 ---
 
@@ -65,7 +68,7 @@ Um simulador de orçamento em **6 passos** integrado diretamente ao WhatsApp do 
 PASSO 1 → Selecionar serviços       (banho, tosa, hidratação, spa, veterinário, hotel)
 PASSO 2 → Escolher porte            (pequeno / médio / grande — multiplicador de preço)
 PASSO 3 → Adicionar extras          (corte de unhas, limpeza de ouvidos, dental, perfumação)
-PASSO 4 → Informar dados            (nome do tutor, nome do pet)
+PASSO 4 → Informar dados             (nome do tutor, nome do pet)
 PASSO 5 → Escolher data             (calendário + observações)
 PASSO 6 → Revisar e enviar          (resumo visual + botão WhatsApp)
 ```
@@ -103,6 +106,8 @@ PASSO 6 → Revisar e enviar          (resumo visual + botão WhatsApp)
 - **Percepção de valor** — o resumo visual justifica o preço
 - **Escalabilidade** — funciona 24h sem intervenção humana
 - **Dados qualificados** — o pet shop recebe nome, pet e intenção clara
+
+🔗 **Visualizar homepage (com simulador):** https://niamwite.github.io/caodeestrelas/
 
 ---
 
@@ -144,31 +149,6 @@ TIPO 3 — Busca local + bairro vizinho
 | `<meta robots>` | index,follow em todas as páginas |
 | Sitemap XML | 32 URLs submetidas ao Google |
 
-### Schema.org implementado
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "PetStore",
-  "name": "Cão de Estrelas Pet Shop",
-  "url": "https://www.caodeestrelas.com.br",
-  "telephone": "+5511942891718",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Rua Gaivota, 903",
-    "addressLocality": "Moema",
-    "addressRegion": "SP",
-    "postalCode": "04522-031",
-    "addressCountry": "BR"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "249"
-  }
-}
-```
-
 ### FAQ com Rich Snippet
 
 Cada página tem 3 FAQs com Schema FAQPage — essas aparecem como **perguntas e respostas diretamente no Google**, aumentando o CTR.
@@ -178,7 +158,7 @@ Exemplo de exibição no Google:
 
 ─────────────────────────────────
 Veterinário em Moema | Cão de Estrelas
-caodeestrelas.com.br/veterinario-moema
+niamwite.github.io/caodeestrelas/veterinario-moema
 ▶ Tem veterinário no pet shop?
 Sim. O Cão de Estrelas oferece consulta
 veterinária com avaliação completa em Moema.
@@ -191,78 +171,98 @@ Sim. Vacinação completa com cartão...
 
 ---
 
-## 5. Tabela de Páginas por Categoria
+## 5. Links de Todas as Páginas
+
+### Homepage
+| Página | Link |
+|--------|------|
+| Homepage | https://niamwite.github.io/caodeestrelas/ |
+
+---
 
 ### Páginas de bairro / geolocalização
+| Página | Link |
+|--------|------|
+| Pet Shop Moema | https://niamwite.github.io/caodeestrelas/pet-shop-moema/ |
+| Pet Shop Vila Mariana | https://niamwite.github.io/caodeestrelas/pet-shop-moema-vila-mariana/ |
+| Pet Shop Ibirapuera | https://niamwite.github.io/caodeestrelas/pet-shop-moema-ibirapuera/ |
+| Pet Shop Indianópolis | https://niamwite.github.io/caodeestrelas/pet-shop-moema-indianopolis/ |
+| Pet Shop Campo Belo | https://niamwite.github.io/caodeestrelas/pet-shop-moema-campo-belo/ |
 
-| URL | Keyword Principal |
-|-----|-------------------|
-| `/pet-shop-moema/` | pet shop moema |
-| `/pet-shop-moema-vila-mariana/` | pet shop vila mariana |
-| `/pet-shop-moema-ibirapuera/` | pet shop perto do ibirapuera |
-| `/pet-shop-moema-indianopolis/` | pet shop indianopolis |
-| `/pet-shop-moema-campo-belo/` | pet shop campo belo |
+---
 
 ### Páginas de preço
+| Página | Link |
+|--------|------|
+| Preço Banho Moema | https://niamwite.github.io/caodeestrelas/preco-banho-moema/ |
+| Preço Tosa Moema | https://niamwite.github.io/caodeestrelas/preco-tosa-moema/ |
 
-| URL | Keyword Principal |
-|-----|-------------------|
-| `/preco-banho-moema/` | preço banho moema |
-| `/preco-tosa-moema/` | preço tosa moema |
+---
 
 ### Páginas de horário
+| Página | Link |
+|--------|------|
+| Horários Pet Shop Moema | https://niamwite.github.io/caodeestrelas/horarios-pet-shop-moema/ |
 
-| URL | Keyword Principal |
-|-----|-------------------|
-| `/horarios-pet-shop-moema/` | horario pet shop moema |
+---
 
 ### Páginas de banho — geral
+| Página | Link |
+|--------|------|
+| Banho em Moema | https://niamwite.github.io/caodeestrelas/banho-em-moema/ |
+| Banho e Tosa Moema | https://niamwite.github.io/caodeestrelas/banho-e-tosa-moema/ |
+| Banho Cachorro Moema | https://niamwite.github.io/caodeestrelas/banho-cachorro-moema/ |
 
-| URL | Keyword Principal |
-|-----|-------------------|
-| `/banho-em-moema/` | banho em moema |
-| `/banho-e-tosa-moema/` | banho e tosa moema |
-| `/banho-cachorro-moema/` | banho para cachorro moema |
+---
 
 ### Páginas de banho — por raça
+| Página | Link |
+|--------|------|
+| Banho Schnauzer Moema | https://niamwite.github.io/caodeestrelas/banho-schnauzer-moema/ |
+| Banho Spitz Moema | https://niamwite.github.io/caodeestrelas/banho-spitz-moema/ |
+| Banho Golden Moema | https://niamwite.github.io/caodeestrelas/banho-golden-moema/ |
+| Banho Poodle Moema | https://niamwite.github.io/caodeestrelas/banho-poodle-moema/ |
+| Banho Labrador Moema | https://niamwite.github.io/caodeestrelas/banho-labrador-moema/ |
+| Banho Beagle Moema | https://niamwite.github.io/caodeestrelas/banho-beagle-moema/ |
+| Banho Gato Moema | https://niamwite.github.io/caodeestrelas/banho-gato-moema/ |
 
-| URL | Keyword Principal |
-|-----|-------------------|
-| `/banho-schnauzer-moema/` | banho schnauzer moema |
-| `/banho-spitz-moema/` | banho spitz moema |
-| `/banho-golden-moema/` | banho golden retriever moema |
-| `/banho-poodle-moema/` | banho poodle moema |
-| `/banho-labrador-moema/` | banho labrador moema |
-| `/banho-beagle-moema/` | banho beagle moema |
-| `/banho-gato-moema/` | banho gato moema |
+---
 
 ### Páginas de tosa — geral
+| Página | Link |
+|--------|------|
+| Tosa em Moema | https://niamwite.github.io/caodeestrelas/tosa-em-moema/ |
 
-| URL | Keyword Principal |
-|-----|-------------------|
-| `/tosa-em-moema/` | tosa em moema |
+---
 
 ### Páginas de tosa — por raça
+| Página | Link |
+|--------|------|
+| Tosa Schnauzer Moema | https://niamwite.github.io/caodeestrelas/tosa-schnauzer-moema/ |
+| Tosa Spitz Moema | https://niamwite.github.io/caodeestrelas/tosa-spitz-moema/ |
+| Tosa Golden Moema | https://niamwite.github.io/caodeestrelas/tosa-golden-moema/ |
+| Tosa Yorkshire Moema | https://niamwite.github.io/caodeestrelas/tosa-yorkshire-moema/ |
+| Tosa Shih Tzu Moema | https://niamwite.github.io/caodeestrelas/tosa-shih-tzu-moema/ |
+| Tosa Buldogue Moema | https://niamwite.github.io/caodeestrelas/tosa-buldogue-moema/ |
+| Tosa Gato Moema | https://niamwite.github.io/caodeestrelas/tosa-gato-moema/ |
 
-| URL | Keyword Principal |
-|-----|-------------------|
-| `/tosa-schnauzer-moema/` | tosa schnauzer moema |
-| `/tosa-spitz-moema/` | tosa spitz moema |
-| `/tosa-golden-moema/` | tosa golden retriever moema |
-| `/tosa-yorkshire-moema/` | tosa yorkshire moema |
-| `/tosa-shih-tzu-moema/` | tosa shih tzu moema |
-| `/tosa-buldogue-moema/` | tosa buldogue moema |
-| `/tosa-gato-moema/` | tosa gato moema |
+---
 
 ### Páginas de serviços especializados
+| Página | Link |
+|--------|------|
+| Veterinário Moema | https://niamwite.github.io/caodeestrelas/veterinario-moema/ |
+| Hidratação Pet Moema | https://niamwite.github.io/caodeestrelas/hidratacao-pet-moema/ |
+| Spa Pet Moema | https://niamwite.github.io/caodeestrelas/spa-pet-moema/ |
+| Hotel Pet Moema | https://niamwite.github.io/caodeestrelas/hotel-pet-moema/ |
+| Creche Pet Moema | https://niamwite.github.io/caodeestrelas/creche-pet-moema/ |
 
-| URL | Keyword Principal |
-|-----|-------------------|
-| `/veterinario-moema/` | veterinario moema |
-| `/hidratacao-pet-moema/` | hidratação pet moema |
-| `/spa-pet-moema/` | spa pet moema |
-| `/hotel-pet-moema/` | hotel pet moema |
-| `/creche-pet-moema/` | creche pet moema |
+---
+
+### Sitemap XML
+| Arquivo | Link |
+|---------|------|
+| Sitemap Index | https://niamwite.github.io/caodeestrelas/sitemap-index.xml |
 
 ---
 
@@ -312,7 +312,7 @@ Sim. Vacinação completa com cartão...
 | FAQ com rich snippet | ✅ |
 | Links internos cruzados | ✅ |
 | Sitemap XML automático | ✅ |
-| Hospedagem (a definir) | ⏳ |
+| Hospedagem GitHub Pages | ✅ Gratuita |
 
 ### Resultados esperados
 
@@ -328,12 +328,14 @@ Sim. Vacinação completa com cartão...
 
 ## Próximos Passos
 
-1. **Deploy** — hospedar o site no domínio caodeestrelas.com.br
+1. **Deploy definitivo** — hospedar o site no domínio caodeestrelas.com.br
 2. **Google Search Console** — cadastrar sitemap e monitorar indexação
 3. **Google Business Profile** — garantir que o perfil esteja completo e com as mesmas informações do site
 4. **Google Ads (opcional)** — criar campanhas para keywords de alta intenção comercial
 
 ---
 
+🔗 **Site ao vivo:** https://niamwite.github.io/caodeestrelas/
+
 *Proposta elaborada para Cão de Estrelas Pet Shop — Moema, São Paulo*
-*www.caodeestrelas.com.br | (11) 94289-1718*
+*(11) 94289-1718*
