@@ -1,0 +1,315 @@
+---
+const siteUrl = 'https://www.caodeestrelas.com.br';
+const pageUrl = `${siteUrl}/creche-pet-moema`;
+const ogImage = 'https://static.wixstatic.com/media/ab417b_1cde5002e62141fbba56fe70a6f12f17~mv2.png/v1/crop/x_1333,y_357,w_3094,h_2478/fill/w_1200,h_960,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/C%C3%83%C2%B3pia_de_Sem_nome.png';
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'PetStore',
+  name: 'Cão de Estrelas Pet Shop',
+  url: siteUrl,
+  image: ogImage,
+  telephone: '+5511942891718',
+  priceRange: '$$',
+  address: { '@type': 'PostalAddress', streetAddress: 'Rua Gaivota, 903', addressLocality: 'Moema', addressRegion: 'SP', postalCode: '04522-031', addressCountry: 'BR' },
+  sameAs: ['https://www.instagram.com/caodeestrelas/'],
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '249' }
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Como funciona a creche pet?', acceptedAnswer: { '@type': 'Answer', text: 'Na creche do Cão de Estrelas, seu pet passa o dia com recreação monitorada, socialização com outros pets, alimentação e passeios supervisionados. Funciona das 8h às 18h em Moema.' } },
+    { '@type': 'Question', name: 'Meu pet precisa ser sociável?', acceptedAnswer: { '@type': 'Answer', text: 'Avaliamos cada pet antes da entrada na creche para garantir a convivência segura. Pets mais tímidos têm espaços adaptados e adaptação gradual.' } },
+    { '@type': 'Question', name: 'Quanto custa creche em Moema?', acceptedAnswer: { '@type': 'Answer', text: 'A diária da creche pet no Cão de Estrelas começa a partir de R$ 75, incluindo recreação, alimentação e passeios. Pacotes mensais com desconto especial.' } }
+  ]
+};
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creche para Pets em Moema | Cão de Estrelas — Creche Diurna com Recreação</title>
+    <meta name="description" content="Creche para pets em Moema com recreação monitorada, socialização, alimentação e passeios supervisionados. Cão de Estrelas, mais de 40 anos em Moema. Agende!" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0d9488" />
+    <link rel="canonical" href={pageUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Cão de Estrelas Pet Shop" />
+    <meta property="og:title" content="Creche para Pets em Moema | Cão de Estrelas" />
+    <meta property="og:description" content="Creche pet em Moema: recreação monitorada, socialização e cuidado durante o dia. Agende pelo WhatsApp." />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)}></script>
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root { --c1: #0d9488; --c1-light: #ccfbf1; --c1-dark: #065f52; --c2: #f97316; --c2-light: #fff7ed; --ink: #1a2e35; --muted: #4b6a74; --card: #ffffff; --bg: #f8fffe; --radius: 20px; --radius-lg: 28px; --shadow-sm: 0 2px 8px rgba(13,148,136,0.06); --shadow: 0 8px 30px rgba(13,148,136,0.10); --shadow-lg: 0 20px 50px rgba(13,148,136,0.14); }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; }
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Nunito', sans-serif; color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; }
+      .container { width: min(1200px, calc(100% - 32px)); margin: 0 auto; }
+      .btn { border: 0; border-radius: 999px; padding: 12px 24px; font-size: 0.95rem; font-weight: 800; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.25s ease; font-family: inherit; }
+      .btn:hover { transform: translateY(-2px); }
+      .btn-primary { color: #fff; background: linear-gradient(135deg, var(--c1), #2dd4bf); box-shadow: 0 8px 20px rgba(13,148,136,0.25); }
+      .btn-secondary { color: #064e4b; background: #d9fffb; border: 2px solid rgba(13,148,136,0.12); box-shadow: 0 8px 16px rgba(13,148,136,0.08); }
+      .site-header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(16px); background: rgba(248,255,254,0.82); border-bottom: 1px solid rgba(13,148,136,0.08); }
+      .site-header .container { display: flex; align-items: center; justify-content: space-between; min-height: 68px; gap: 12px; }
+      .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+      .logo-icon { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; overflow: hidden; background: #fff; box-shadow: 0 6px 16px rgba(13,148,136,0.18); border: 1px solid rgba(13,148,136,0.12); }
+      .logo-icon img { width: 100%; height: 100%; object-fit: cover; }
+      .brand-text { font-family: 'Baloo 2', cursive; font-size: 1.35rem; }
+      .brand-text span { color: var(--c1); }
+      .menu { display: flex; align-items: center; gap: 6px; }
+      .menu a { text-decoration: none; color: var(--muted); font-weight: 700; font-size: 0.9rem; padding: 8px 14px; border-radius: 10px; transition: all 0.2s; }
+      .menu a:hover { color: var(--c1); background: var(--c1-light); }
+      .hero { padding: 80px 0 60px; background: linear-gradient(160deg, #f0fdfa 0%, #ecfdf5 30%, #fff7ed 70%, #fffbeb 100%); }
+      .hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 48px; }
+      .badge { display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; padding: 6px 16px; background: #fff; border: 1px solid #fed7aa; color: #9a3412; font-weight: 700; font-size: 0.88rem; box-shadow: var(--shadow-sm); }
+      .hero h1 { font-family: 'Baloo 2', cursive; font-size: clamp(2.2rem, 4.2vw, 3.8rem); line-height: 1.1; margin-top: 18px; }
+      .hero h1 em { font-style: normal; background: linear-gradient(135deg, var(--c1), var(--c2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+      .hero-desc { font-size: 1.15rem; color: var(--muted); max-width: 52ch; margin-top: 16px; line-height: 1.7; }
+      .hero-actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+      .hero-visual { position: relative; }
+      .hero-img-wrap { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
+      .hero-img-wrap img { width: 100%; height: 340px; object-fit: cover; display: block; }
+      section { padding: 72px 0; }
+      .section-header { max-width: 640px; }
+      .section-tag { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1.2px; color: var(--c1); margin-bottom: 8px; }
+      .section-tag::before { content: ''; width: 24px; height: 3px; border-radius: 999px; background: linear-gradient(90deg, var(--c1), var(--c2)); }
+      .section-title { font-family: 'Baloo 2', cursive; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1.15; }
+      .section-desc { color: var(--muted); margin-top: 10px; line-height: 1.7; max-width: 58ch; }
+      #beneficios { background: #fff; }
+      .benefits-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 32px; }
+      .benefit-card { background: var(--bg); border-radius: var(--radius); padding: 24px; border: 1px solid rgba(13,148,136,0.06); display: flex; gap: 16px; align-items: start; }
+      .benefit-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--c1-light); display: grid; place-items: center; font-size: 1.3rem; flex-shrink: 0; }
+      .benefit-card h3 { font-size: 1rem; font-weight: 800; }
+      .benefit-card p { margin-top: 6px; color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
+      .rotina-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 32px; }
+      .rotina-item { background: var(--card); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow-sm); border: 1px solid rgba(13,148,136,0.06); text-align: center; }
+      .rotina-item .rotina-hora { font-weight: 800; color: var(--c1); font-size: 1rem; }
+      .rotina-item .rotina-desc { color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
+      .servicos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 32px; }
+      .servico-card { background: var(--card); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-sm); border: 1px solid rgba(13,148,136,0.06); transition: all 0.3s; text-decoration: none; color: var(--ink); }
+      .servico-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+      .servico-card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 8px; }
+      .servico-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
+      .servico-card .servico-emoji { font-size: 2rem; margin-bottom: 8px; }
+      #faq { background: linear-gradient(180deg, var(--bg), #f0fdfa); }
+      .faq-list { max-width: 720px; margin: 32px auto 0; }
+      .faq-item { background: var(--card); border-radius: var(--radius); padding: 24px; margin-bottom: 16px; box-shadow: var(--shadow-sm); border: 1px solid rgba(13,148,136,0.06); }
+      .faq-item h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 8px; }
+      .faq-item p { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+      #cta { background: linear-gradient(160deg, #f0fdfa, #ecfdf5); text-align: center; }
+      .cta-content { max-width: 600px; margin: 0 auto; }
+      .cta-content h2 { font-family: 'Baloo 2', cursive; font-size: clamp(1.8rem, 3vw, 2.4rem); }
+      .cta-content p { margin-top: 12px; color: var(--muted); font-size: 1.1rem; }
+      .cta-actions { margin-top: 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+      .site-footer { border-top: 1px solid rgba(13,148,136,0.1); padding: 28px 0; color: var(--muted); font-size: 0.88rem; text-align: center; }
+      .float-wa { position: fixed; bottom: 24px; right: 24px; z-index: 60; width: 60px; height: 60px; border-radius: 50%; background: #25d366; color: #fff; display: grid; place-items: center; box-shadow: 0 6px 20px rgba(37,211,102,0.4); text-decoration: none; font-size: 1.7rem; transition: all 0.3s ease; }
+      .float-wa:hover { transform: scale(1.1); }
+      @media (max-width: 980px) { .hero-grid { grid-template-columns: 1fr; } .benefits-grid { grid-template-columns: 1fr; } .menu a:not(.btn) { display: none; } .hero-visual { order: -1; } }
+      @media (max-width: 640px) { .hero { padding: 48px 0 36px; } section { padding: 48px 0; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="/" class="brand">
+          <span class="logo-icon"><img src="https://static.wixstatic.com/media/ab417b_1cde5002e62141fbba56fe70a6f12f17~mv2.png/v1/crop/x_1333,y_357,w_3094,h_2478/fill/w_588,h_472,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/C%C3%83%C2%B3pia_de_Sem_nome.png" alt="Cão de Estrelas" /></span>
+          <span class="brand-text">Cão de <span>Estrelas</span></span>
+        </a>
+        <nav class="menu">
+          <a href="/">Início</a>
+          <a href="/banho-em-moema">Banho</a>
+          <a href="/tosa-em-moema">Tosa</a>
+          <a href="/pet-shop-moema">Pet Shop</a>
+          <a class="btn btn-primary" href="https://wa.me/5511942891718?text=Olá! Gostaria de informações sobre creche pet em Moema">Reservar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="badge">☀️ Creche diurna com recreação</span>
+            <h1>Creche para pets em <em>Moema</em> — diversão e cuidado durante o dia</h1>
+            <p class="hero-desc">Trabalhe tranquilo sabendo que seu pet está se divertindo, sendo cuidado e fazendo amigos na creche do Cão de Estrelas. Recreação monitorada, alimentação e muito carinho.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://wa.me/5511942891718?text=Olá! Gostaria de reservar vaga na creche pet em Moema">Reservar vaga na creche</a>
+              <a class="btn btn-secondary" href="#beneficios">Saiba mais</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-img-wrap">
+              <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=1200&q=80" alt="Creche para pets em Moema" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="beneficios">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Benefícios da creche</div>
+            <h2 class="section-title">Seu pet feliz enquanto você trabalha</h2>
+            <p class="section-desc">A creche pet oferece estímulo, socialização e rotina saudável para o bem-estar do seu melhor amigo.</p>
+          </div>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-icon">🎾</div>
+              <div>
+                <h3>Recreação monitorada</h3>
+                <p>Atividades lúdicas e brincadeiras supervisionadas por profissionais experientes que garantem a diversão segura do seu pet.</p>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">🤝</div>
+              <div>
+                <h3>Socialização</h3>
+                <p>Convivência com outros pets em ambiente controlado, que ajuda a reduzir ansiedade e desenvolver habilidades sociais saudáveis.</p>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">🍖</div>
+              <div>
+                <h3>Alimentação e rotina</h3>
+                <p>Seguimos a rotina alimentar do seu pet, respeitando horários e preferências. Pode enviar a ração e petiscos de casa.</p>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">📱</div>
+              <div>
+                <h3>Fotos e atualizações</h3>
+                <p>Enviamos fotos e vídeos pelo WhatsApp durante o dia para você acompanhar a diversão do seu pet em tempo real.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="rotina" style="background:linear-gradient(180deg,var(--bg),#f0fdfa);">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Rotina do dia</div>
+            <h2 class="section-title">Um dia na creche do Cão de Estrelas</h2>
+            <p class="section-desc">Rotina equilibrada com momentos de brincadeira, descanso e alimentação para o bem-estar do seu pet.</p>
+          </div>
+          <div class="rotina-grid">
+            <div class="rotina-item">
+              <div class="rotina-hora">8h - Chegada</div>
+              <div class="rotina-desc">Recepção e adaptação ao ambiente</div>
+            </div>
+            <div class="rotina-item">
+              <div class="rotina-hora">9h - Passeio</div>
+              <div class="rotina-desc">Caminhada supervisionada ao ar livre</div>
+            </div>
+            <div class="rotina-item">
+              <div class="rotina-hora">10h30 - Recreação</div>
+              <div class="rotina-desc">Brincadeiras e socialização em grupo</div>
+            </div>
+            <div class="rotina-item">
+              <div class="rotina-hora">12h - Almoço</div>
+              <div class="rotina-desc">Alimentação conforme rotina de casa</div>
+            </div>
+            <div class="rotina-item">
+              <div class="rotina-hora">14h - Descanso</div>
+              <div class="rotina-desc">Tempo de repouso em espaço confortável</div>
+            </div>
+            <div class="rotina-item">
+              <div class="rotina-hora">15h30 - Recreação</div>
+              <div class="rotina-desc">Atividades lúdicas e brincadeiras</div>
+            </div>
+            <div class="rotina-item">
+              <div class="rotina-hora">17h - Banho leve</div>
+              <div class="rotina-desc">Higienização antes da saída</div>
+            </div>
+            <div class="rotina-item">
+              <div class="rotina-hora">18h - Saída</div>
+              <div class="rotina-desc">Devolução com relatório do dia</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Serviços relacionados</div>
+            <h2 class="section-title">Combine creche com outros serviços</h2>
+            <p class="section-desc">Tudo no mesmo lugar para o conforto seu e do seu pet.</p>
+          </div>
+          <div class="servicos-grid">
+            <a class="servico-card" href="/banho-em-moema">
+              <div class="servico-emoji">🛁</div>
+              <h3>Banho completo</h3>
+              <p>Combine a creche com banho para seu pet sair cansado de brincar e limpinho no fim do dia.</p>
+            </a>
+            <a class="servico-card" href="/hotel-pet-moema">
+              <div class="servico-emoji">🏨</div>
+              <h3>Hotel pet</h3>
+              <p>Precisa de hospedagem por mais de um dia? Conheça nosso hotelzinho com toda a estrutura.</p>
+            </a>
+            <a class="servico-card" href="/veterinario-moema">
+              <div class="servico-emoji">🩺</div>
+              <h3>Veterinário</h3>
+              <p>Consulta veterinária no mesmo local para maior comodidade e acompanhamento da saúde do seu pet.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="container">
+          <div class="section-header" style="text-align:center;margin:0 auto;">
+            <div class="section-tag" style="justify-content:center;">Dúvidas frequentes</div>
+            <h2 class="section-title">Perguntas sobre creche pet em Moema</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3>Como funciona a creche pet?</h3>
+              <p>Na creche do Cão de Estrelas, seu pet passa o dia com recreação monitorada, socialização com outros pets, alimentação e passeios supervisionados. Funciona das 8h às 18h em Moema. Enviamos fotos e atualizações pelo WhatsApp.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Meu pet precisa ser sociável?</h3>
+              <p>Avaliamos cada pet antes da entrada na creche para garantir a convivência segura. Pets mais tímidos têm espaços adaptados e passam por um processo de adaptação gradual para se sentirem confortáveis.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Quanto custa creche em Moema?</h3>
+              <p>A diária da creche pet no Cão de Estrelas começa a partir de R$ 75, incluindo recreação, alimentação e passeios. Temos pacotes mensais com desconto especial. Consulte pelo WhatsApp.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta">
+        <div class="container">
+          <div class="cta-content">
+            <div class="section-tag" style="justify-content:center;">Reserve agora</div>
+            <h2>Reserve vaga na creche pet em Moema</h2>
+            <p>A partir de R$ 75/dia. Fale pelo WhatsApp e agende um dia de diversão para seu pet.</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="https://wa.me/5511942891718?text=Olá! Gostaria de reservar vaga na creche pet em Moema">Reservar pelo WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Cão de Estrelas Pet Shop — Rua Gaivota, 903 — Moema, São Paulo</p>
+        <p style="margin-top:8px;"><a href="tel:+5511942891718" style="color:var(--c1);">(11) 94289-1718</a></p>
+      </div>
+    </footer>
+
+    <a class="float-wa" href="https://wa.me/5511942891718?text=Olá! Gostaria de informações sobre creche pet em Moema" aria-label="WhatsApp">💬</a>
+  </body>
+</html>
